@@ -23,10 +23,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    
+      - name: docker image for python
+        run: docker run smizy/scikit-learn
+     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
-      - uses: smizy/scikit-learn
 
       - name: Run Python script for final project
         run: |
