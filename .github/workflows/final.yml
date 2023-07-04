@@ -26,6 +26,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run Python script for final project
-        run: |
+      - uses: actions/setup-python@v4
+      - run: |
           echo Run Python script for final project
           python3 final_project/mehta_final_num_analysis.py
