@@ -27,8 +27,10 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-          cache: 'pip' # caching pip dependencies
-      - run: pip install scikit-learn, matplotlib, numpy
+      - run: |
+          pip install scikit-learn
+          pip install matplotlib
+          pip install numpy
      
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
