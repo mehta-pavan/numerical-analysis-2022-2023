@@ -36,7 +36,7 @@ plt.title('Hand written digit '+str(y_train[N]))
 """
 Assignment 1
 """
-
+print("assignment 1")
 #put this inside a class
 #see if any construcotr __init__ can be uses
 #saves the weights and bisases
@@ -69,6 +69,7 @@ def d_two(a,b):
 """
 Assignment 2
 """
+print("assignment 2")
 
 def dist(x_train, N, norm = d_one):
     #computes distances between two objects of x_train
@@ -104,6 +105,7 @@ def dist(x_train, N, norm = d_one):
 Assignment 3
 """
 
+print("assignment 3")
 
 # plot the dist matrix D in infrinity, one and two norm for first 100 images.
 
@@ -139,6 +141,7 @@ Leove One out
 """
 
 
+print("assignment 4")
 
 def loo(dist, N, norm = d_one):
     #Leave one out -> to compute effiency 
@@ -176,6 +179,7 @@ Assignment 5
 plot errors
 
 """
+print("assignment 5")
 
 err = np.zeros((5, 4))
 tim = np.zeros((5, 4))
@@ -237,6 +241,7 @@ plt.show()
 Assigment 6
 
 """
+print("assignment 6")
 
 def d_h1(a,b):
     
@@ -316,11 +321,12 @@ plt.show()
 Assinment 7 : Balltree
 
 """
+print("assignment 7")
 
 
 from sklearn.neighbors import BallTree
 
-N2 = [200, 400, 800, 1600, 3200, 6400]
+N2 = [200, 400, 800, 1600, 3200]
 
 
 
@@ -351,9 +357,10 @@ def ball_tree(N, k1, norm):
             
     return error_counter / len(x_test)
 
+print("assignment 7 : k = 1")
 
-err_2 = np.zeros((6, 4))
-tim_2 = np.zeros((6, 4))
+err_2 = np.zeros((5, 4))
+tim_2 = np.zeros((5, 4))
 i=0
 #case k = 1
 k = 1
@@ -418,14 +425,15 @@ plt.show()
 
 
 
-#Ball tree with  k = 10
+#Ball tree with  k = 2
+print("assignment 7 : k = 2")
 
 
 
 i=0
-k = 10
-err_3 = np.zeros((6, 4))
-tim_3 = np.zeros((6, 4))
+k = 2
+err_3 = np.zeros((5, 4))
+tim_3 = np.zeros((5, 4))
 
 for N in N2:
     
