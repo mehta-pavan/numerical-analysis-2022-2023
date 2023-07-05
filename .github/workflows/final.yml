@@ -37,3 +37,6 @@ jobs:
         run: |
           echo Run Python script for final project
           python3 final_project/mehta_final_num_analysis.py
+          
+      - name: move
+        run: cp -r *.png /final_project/. 
