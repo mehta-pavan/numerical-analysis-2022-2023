@@ -350,7 +350,7 @@ def ball_tree(N, k1, norm):
 
         distt, k = tree.query(x_t[i, :].reshape(1,-1), k=k1)
         
-        k = int(k)
+        #k = int(k)
         
         if y_train[k] != y_test[i]:
             error_counter+=1
@@ -461,7 +461,7 @@ for N in N2:
 
 
 
-#plot error for k = 10
+#plot error for k = 2
 
 
 plt.loglog(N2,err_2[:,0], "r--", label = "d_inf")
